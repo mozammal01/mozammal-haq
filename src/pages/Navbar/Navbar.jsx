@@ -1,88 +1,81 @@
-import { Link, NavLink} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
+import UpToDown from "../../components/button/UpToDown";
 
 const Navbar = () => {
-  // const location = useLocation();
 
-  // useEffect(() => {
-
-  //   console.log(location);
-  //   const home = location.pathname === '/'
-
-  //   try {
-  //     if (location.pathname) {
-  //       if (home) {
-  //         let navHome = document.getElementById("home")
-  //         if (navHome) {
-  //           navHome.className = 'bg-blue-500'
-  //         }
-  //         else {
-  //           console.log('fuck You');
-  //         }
-  //         console.log(navHome);
-  //       }
-  //     }
-  //   }
-  //   catch (err) {
-  //     console.log(err);
-  //   }
-  // }, [location])
   const navLinks = [
     <>
-    
+
       {/* Home */}
       <li><NavLink
         to="/"
         style={({ isActive }) => {
-          return isActive ? { color: "white" } : {};
+          return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
+        className='relative bg-white rounded-lg py-2 px-5 group'
       >
-        Home
+        <span
+          className="absolute w-0 h-1 group-hover:w-full transition-all ease-out duration-500 bg-green-400 left-0 top-14"></span>
+        <span className="relative">Home</span>
       </NavLink></li>
-      
+
       {/* About */}
       <li><NavLink
         to="/about"
         style={({ isActive }) => {
-          return isActive ? { color: "plum" } : {};
+          return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
+        className='relative bg-white rounded-lg py-2 px-5 group'
       >
-        About
+        <span
+          className="absolute w-0 h-1 group-hover:w-full transition-all ease-out duration-500 bg-green-400 left-0 top-14"></span>
+        <span className="relative">About</span>
       </NavLink></li>
-      
+
       {/* Pages */}
       <li><NavLink
         to="/pages"
         style={({ isActive }) => {
-          return isActive ? { color: "plum" } : {};
+          return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
+        className='relative bg-white rounded-lg py-2 px-5 group'
       >
-        Pages
+        <span
+          className="absolute w-0 h-1 group-hover:w-full transition-all ease-out duration-500 bg-green-400 left-0 top-14"></span>
+        <span className="relative">Pages</span>
       </NavLink></li>
 
       {/* services */}
       <li><NavLink
         to="/services"
         style={({ isActive }) => {
-          return isActive ? { color: "plum" } : {};
+          return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
+        className='relative bg-white rounded-lg py-2 px-5 group'
       >
-        Services
+        <span
+          className="absolute w-0 h-1 group-hover:w-full transition-all ease-out duration-500 bg-green-400 left-0 top-14"></span>
+        <span className="relative">Services</span>
       </NavLink></li>
 
       {/* Contact */}
       <li><NavLink
         to="/contact"
         style={({ isActive }) => {
-          return isActive ? { color: "plum" } : {};
+          return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
+        className='relative bg-white rounded-lg py-2 px-5 group'
       >
-        Contact
+        <span
+          className="absolute w-0 h-1 group-hover:w-full transition-all ease-out duration-500 bg-green-400 left-0 top-14"></span>
+        <span className="relative">Contact</span>
       </NavLink></li>
     </>
   ]
+
   return (
-    <div className="navbar bg-base-100 h-16">
+    <div className="navbar max-w-7xl mx-auto bg-base-800 items-center h-16">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -105,7 +98,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to='/'><a className="ms-10"><img width={70} src={logo} alt="logo" /></a></Link>
+        <Link to='/'><p className="ms-10"><img width={70} src={logo} alt="logo" /></p></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold text-lg gap-7">
@@ -113,7 +106,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn font-bold">My Resume</a>
+        <UpToDown btnText='My Resume'/>
       </div>
     </div>
   );
