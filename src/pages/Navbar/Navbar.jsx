@@ -106,7 +106,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <UpToDown btnText='My Resume'/>
+        <UpToDown className='font-bold' btnText='My Resume'/>
       </div>
     </div>
   );

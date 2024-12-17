@@ -1,9 +1,10 @@
-import React from 'react';
-
 const Banner = () => {
   return (
-    <div>
-      You can set up your banner here
+    <div className="my-20">
+      <span className="text-green-400">
+        Hi, My name is 
+      </span>
+      <h2 className="text-4xl font-bold">Mozammal Haq</h2>
     </div>
   );
 };

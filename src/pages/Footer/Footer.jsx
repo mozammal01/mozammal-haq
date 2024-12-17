@@ -2,7 +2,9 @@ import logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10">
+    <div className='bg-base-200 text-base-content'>
+
+    <footer className="footer p-10 max-w-5xl mx-auto">
       <aside>
         <div>
           <img className='ms-9' src={logo} width={100} alt="logo" />
@@ -35,6 +37,7 @@ const Footer = () => {
         <a className="link link-hover">Cookie policy</a>
       </nav>
     </footer>
+    </div>
   );
 };
 
