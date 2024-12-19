@@ -13,10 +13,10 @@ const Root = () => {
         <div className="col-span-1">
           <LeftSideNav />
         </div>
-        <div className="col-span-6 min-h-screen">
+        <div className="col-span-10 min-h-screen">
           <Outlet></Outlet>
         </div>
-        <div className="col-span-5">
+        <div className="col-span-1">
           <RightSideNav />
         </div>
       </div>
