@@ -8,7 +8,7 @@ const LeftToRight = ({ className, btnText }) => {
         className={`${className} relative bg-white rounded overflow-hidden border-2 border-green-400 text-green-400 duration-500 hover:text-white py-2.5 px-5 group`}>
         <span
           className="absolute w-32 h-16 group-hover:-me-32 transition-all ease-linear duration-500 bg-green-400 right-32 top-0"></span>
-        <span className="relative">{btnText}</span>
+        <span className="relative font-bold">{btnText}</span>
       </a>
     </>
   );
