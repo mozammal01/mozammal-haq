@@ -9,15 +9,16 @@ const Root = () => {
     <div>
       <Navbar></Navbar>
 
-      <div className="grid grid-cols-12 gap-10">
-        <div className="col-span-1">
-          <LeftSideNav />
-        </div>
-        <div className="col-span-10 min-h-screen">
+      <div className="relative">
+        <div className="min-h-screen">
+          <div>
+            <LeftSideNav />
+          </div>
+
           <Outlet></Outlet>
-        </div>
-        <div className="col-span-1">
-          <RightSideNav />
+          <div className="absolute right-10">
+            <RightSideNav />
+          </div>
         </div>
       </div>
 

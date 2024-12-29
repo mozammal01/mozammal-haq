@@ -22,7 +22,7 @@ const Navbar = () => {
 
       {/* About */}
       <li><NavLink
-        to="/about"
+        to='/about'
         style={({ isActive }) => {
           return isActive ? { color: ['#4ade80'], backgroundColor: 'white', border: 'solid 2px #4ade80' } : {};
         }}
@@ -106,7 +106,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <UpToDown className='font-bold' btnText='My Resume'/>
+        <UpToDown className='font-bold' btnText='My Resume' />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import LeftToRight from "../../../components/button/LeftToRight";
 const Banner = () => {
   return (
     <>
-      <div className="my-20 space-y-3">
+      <div className="my-20 space-y-3 max-w-6xl mx-auto">
         <span className="text-green-400 text-xl font-semibold">
           Hi, My name is
         </span>
