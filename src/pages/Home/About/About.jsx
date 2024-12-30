@@ -1,13 +1,15 @@
 import photo from '../../../assets/photo.png'
 import LeftToRight from '../../../components/button/LeftToRight';
 import RightToLeft from '../../../components/button/RightToLeft';
+import SectionTitle from '../../../components/sectionTitle/SectionTitle';
 
 const About = () => {
   return (
     <section className="bg-base-200 min-h-screen my-10">
-      <div className='max-w-6xl mx-auto py-10'>
+      <div className='max-w-6xl mx-auto py-5'>
 
-        <h1 className="text-5xl font-bold text-green-400">About Me</h1>
+        <SectionTitle heading='About Me' />
+        {/* <h1 className="text-5xl font-bold text-green-400">About Me</h1> */}
         <div id="about" className="flex justify-between items-center">
 
           <div className="space-y-5 w-1/2">
