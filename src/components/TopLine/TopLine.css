@@ -1,0 +1,43 @@
+
+.top-side-line {
+  height: 8px;
+  width: 8px;
+  margin: 0 10px;
+  background-color: #4ade80;
+  transform: rotate(45deg);
+}
+
+.top-middle-line {
+  width: 180px;
+  height: 4px;
+  background-color: #4ade80;
+  border-radius: 4px;
+  position: relative;
+}
+
+.top-inner-circle {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  transform: rotate(45deg);
+  border: 1px solid #4ade80;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation-delay: 5s;
+  animation: right-left-moving 6s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes right-left-moving {
+
+  0%,
+  100% {
+      right: 0%;
+  }
+
+  50% {
+      right: 97%;
+  }
+}

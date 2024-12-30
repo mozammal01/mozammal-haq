@@ -12,7 +12,7 @@ const About = () => {
 
           <div className="space-y-5 w-1/2">
             <h3 className="text-3xl font-bold">I am a JR. Web Developer</h3>
-            <p className='text-xl'>Hello, My name is <span className='font-semibold'>Mozammal Haq</span>. I live in Bangladesh. Now i am studing in Government adomjeenagar MW collage in Narayongonj, Bangladesh.</p>
+            <p className='text-xl'>Hello, My name is <span className='font-semibold'>Mozammal Haq</span>. I live in Bangladesh. Now i am studying in Government adomjeenagar MW collage in Narayongonj, Bangladesh.</p>
             <p className='text-xl'>My interest in web development started in 2023 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
 
             <div className='flex items-center gap-5'>
