@@ -7,6 +7,7 @@ import firebaseIcon from '../../../../assets/Icons/firebaseIcon.png'
 import mongodbIcon from '../../../../assets/Icons/mongodbIcon.png'
 import gitIcon from '../../../../assets/Icons/gitIcon.png'
 import bootstrapIcon from '../../../../assets/Icons/bootstrapIcon.png'
+import figmaIcon from '../../../../assets/Icons/figmaIcon.png'
 
 
 // Import Swiper React components
@@ -68,24 +69,24 @@ const MySkills = () => {
 
           {/* Js */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <SiJavascript className='size-20 text-yellow-500 transform hover:scale-x-[-1] duration-300' />
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <SiJavascript className='size-16 text-yellow-500 duration-700' />
               <span className='font-bold'>JS</span>
             </div>
           </SwiperSlide>
 
           {/* HTML */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <SiHtml5 className='size-20 text-orange-600 transform hover:scale-x-[-1] duration-300' />
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <SiHtml5 className='size-16 text-orange-600 duration-700' />
               <span className='font-bold'>HTML</span>
             </div>
           </SwiperSlide>
 
           {/* CSS */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <FaCss3Alt className='size-20 text-blue-600 transform hover:scale-x-[-1] duration-300' />
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating rotating'>
+              <FaCss3Alt className='size-16 text-blue-600 duration-700' />
               <span className='font-bold'>CSS</span>
             </div>
           </SwiperSlide>
@@ -93,24 +94,24 @@ const MySkills = () => {
 
           {/* Node Js */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <IoLogoNodejs className='size-20 text-green-600 transform hover:scale-x-[-1] duration-300' />
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <IoLogoNodejs className='size-20 text-green-600 duration-700' />
               <span className='font-bold'>Node JS</span>
             </div>
           </SwiperSlide>
 
           {/*Tailwind CSS */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <RiTailwindCssFill className='size-20 text-cyan-500 transform hover:scale-x-[-1] duration-300' />
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <RiTailwindCssFill className='size-20 text-cyan-500 duration-700' />
               <span className='font-bold'>Tailwind CSS</span>
             </div>
           </SwiperSlide>
 
           {/*Firebase */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <div className='w-20 transform hover:scale-x-[-1] duration-300'>
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <div className='w-20 duration-700'>
                 <img src={firebaseIcon} alt="firebaseIcon" />
               </div>
               <span className='font-bold'>Firebase</span>
@@ -119,8 +120,8 @@ const MySkills = () => {
 
           {/* Bootstrap */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <div className='w-20 transform hover:scale-x-[-1] duration-300'>
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <div className='w-20 duration-700'>
                 <img src={bootstrapIcon} alt="bootstrapIcon" />
               </div>
               <span className='font-bold'>Bootstrap</span>
@@ -130,8 +131,8 @@ const MySkills = () => {
 
           {/* Git */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <div className='w-20 transform hover:scale-x-[-1] duration-300'>
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <div className='w-20 duration-700'>
                 <img src={gitIcon} alt="gitIcon" />
               </div>
               <span className='font-bold'>Git</span>
@@ -140,11 +141,21 @@ const MySkills = () => {
 
           {/* mongodb */}
           <SwiperSlide className='-ml-20'>
-            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-              <div className='w-20 transform hover:scale-x-[-1] duration-300'>
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <div className='w-20 duration-700'>
                 <img src={mongodbIcon} alt="mongodbIcon" />
               </div>
               <span className='font-bold'>MongoDB</span>
+            </div>
+          </SwiperSlide>
+
+          {/* Figma */}
+          <SwiperSlide className='-ml-20'>
+            <div className='rounded-xl w-40 h-40 bg-base-200 flex flex-col items-center justify-center space-y-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rotating'>
+              <div className='w-20 duration-700'>
+                <img src={figmaIcon} alt="figmaIcon" />
+              </div>
+              <span className='font-bold'>Figma</span>
             </div>
           </SwiperSlide>
 
